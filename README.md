@@ -70,7 +70,7 @@ The application uses React Router for client-side routing. The `App.tsx` file se
 
 The application uses several libraries and dependencies to build and run. Here is a list of the main libraries and their versions:
 
-- React19 + Vite
+- React19 + Vite + Typescript
 - React Router7
 - Material UI6
 - Tailwind CSS4
