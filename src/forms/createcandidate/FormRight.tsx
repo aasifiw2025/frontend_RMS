@@ -67,7 +67,7 @@ const FormRight = ({ socials, setSocials }: formLinkProps) => {
               placeholder="paste Link here"
               type="email"
             />
-            <button className="object-contain rounded-[10px] p-4 bg-[var(--bg-primary)] flex justify-center items-center">
+            <button className="object-contain  rounded-[10px] p-4 bg-[var(--bg-primary)] flex justify-center items-center">
               <FaPlus color="#fff" size={15} />
             </button>
           </div>
@@ -78,17 +78,21 @@ const FormRight = ({ socials, setSocials }: formLinkProps) => {
 
         <div className="mt-6 flex items-center justify-between w-full">
           <input ref={fileRef} type="file" className="hidden" />
-          <Input
-            value={socials.resume!}
-            onChange={(e) => setSocials({ ...socials, resume: e.target.value })}
-            id="resume"
-            classname="w-fit h-[45px]"
-            placeholder="Upload Resume"
-            type="text"
-          />
+          <div className="flex-1 mr-4">
+            <Input
+              value={socials.resume!}
+              onChange={(e) =>
+                setSocials({ ...socials, resume: e.target.value })
+              }
+              id="resume"
+              classname="w-full h-[45px]"
+              placeholder="Upload Resume"
+              type="text"
+            />
+          </div>
           <button
             onClick={() => fileRef?.current?.click()}
-            className="h-[45px]  w-[96px] border-3 border-[#BBBBBB] rounded-[10px]"
+            className="h-[45px] w-[96px] border-3 border-[#BBBBBB] rounded-[10px]"
           >
             Upload
           </button>

@@ -6,6 +6,7 @@ import FormLeft from "../forms/createcandidate/FormLeft";
 import FormRight from "../forms/createcandidate/FormRight";
 import { FaPlus } from "react-icons/fa";
 import Button from "../components/ui/Button";
+import ProfileDetails from "../forms/createcandidate/ProfileDetails";
 
 const CreateCandidate = () => {
   const [accountDetails, setAccountDetails] = useState({
@@ -77,6 +78,11 @@ const CreateCandidate = () => {
         <FormLeft formData={createProps} setFormData={setCreateProps} />
         <FormRight socials={socials} setSocials={setSocials} />
       </section>
+      <div className="h-[50px] w-full bg-[#F5F4F4] rounded-lg border-[1px] border-[#CBCBCB] flex justify-start items-center pl-4 mt-6">
+        <span>Profile Details</span>
+      </div>
+
+      <ProfileDetails />
     </form>
   );
 };
