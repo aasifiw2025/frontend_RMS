@@ -1,54 +1,82 @@
-# React + TypeScript + Vite
+# RMS - Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Getting Started
 
-Currently, two official plugins are available:
+### Prerequisites
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [Node.js](https://nodejs.org/en/) (version 12.0.0 or higher)
+- [Yarn](https://yarnpkg.com/) (version 1.0.0 or higher)
 
-## Expanding the ESLint configuration
+### Installation
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+1. Clone the repository:
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+```bash
+git clone https://github.com/your-username/rms-frontend.git
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+2. Navigate to the project directory:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+```bash
+cd rms-frontend
 ```
+
+3. Install the dependencies:
+
+```bash
+yarn install
+```
+
+### Running the Application
+
+1. Start the development server:
+
+```bash
+yarn start
+```
+
+2. Open your browser and navigate to `http://localhost:3000` to view the application.
+
+### Building the Application
+
+To build the application for production, run:
+
+```bash
+yarn build
+```
+
+This will create a `build` directory containing the optimized production build of the application.
+
+### Deployment
+
+You can deploy the built application to any static file hosting service, such as Netlify, Vercel, or GitHub Pages.
+
+## Contributing
+
+Contributions are welcome! Please read the [CONTRIBUTING.md](CONTRIBUTING.md) file for guidelines on how to contribute to this project.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+
+### Routing
+
+The application uses React Router for client-side routing. The `App.tsx` file sets up the main routing configuration, and the `pages` directory contains the individual route components.
+
+<img src="idabtech.drawio.png">
+
+## Libraries and Dependencies
+
+The application uses several libraries and dependencies to build and run. Here is a list of the main libraries and their versions:
+
+- React19 + Vite
+- React Router7
+- Material UI6
+- Tailwind CSS4
+- Lucide React0.483.0
+- React Icons5.5.0
+- React Switch7.1.0
+- Clsx2.1.1
+
+
