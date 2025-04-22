@@ -8,7 +8,7 @@ const Header = () => {
     navigate("/profiles/create-candidate");
   };
   return (
-    <section
+    <header
       aria-label="header"
       className="flex items-end justify-between w-full"
     >
@@ -21,11 +21,11 @@ const Header = () => {
       <Button
         onClick={handleNavigate}
         title="Create Candidate"
-        className=" h-[35px]"
+        className=" h-[35px] bg-[var(--bg-primary)]"
         hasIcon
         icon={<FaPlus />}
       />
-    </section>
+    </header>
   );
 };
 

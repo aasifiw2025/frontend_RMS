@@ -1,7 +1,8 @@
 import { Switch } from "@mui/material";
 import { ChangeEvent, useState } from "react";
-import { FaRegEdit } from "react-icons/fa";
+import { FaRegEdit, FaRegEye } from "react-icons/fa";
 import { MdDelete } from "react-icons/md";
+import { Link } from "react-router-dom";
 
 const CompanyList = ({ hashandLogo }: { hashandLogo: boolean }) => {
   const [checked, setChecked] = useState(false);
@@ -120,9 +121,12 @@ const CompanyList = ({ hashandLogo }: { hashandLogo: boolean }) => {
         </span>
       </div>
       <div className="flex items-center gap-2">
-        <button className="text-sm font-[700] text-black font-inter h-[45px] w-[120px] py-2 px-2.5 border-[0.5px] border-[#CDD7E3] rounded-lg shadow-md">
-          View Details
-        </button>
+        <Link
+          to={"/profiles/company/1"}
+          className="text-sm font-[700] text-black font-inter h-[45px] w-[50px] py-2 px-2.5 border-[0.5px] border-[#CDD7E3] rounded-lg shadow-md flex justify-center items-center"
+        >
+          <FaRegEye />
+        </Link>
         <button className="text-sm font-[700] text-black font-inter h-[45px] w-[50px] py-2 px-2.5 border-[0.5px] border-[#CDD7E3] rounded-lg shadow-md flex justify-center items-center">
           <FaRegEdit />
         </button>

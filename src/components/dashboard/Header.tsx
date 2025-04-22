@@ -51,13 +51,13 @@ const Header = () => {
           ]}
           classname="h-10.75"
         />
-        <button className="border border-[#BBBBBB] rounded-lg p-3 flex justify-center items-center h-10.75">
+        <button className="border  border-[#BBBBBB] rounded-lg p-3 flex justify-center items-center h-10.75">
           <FaSearch />
         </button>
       </div>
       <div className="w-full flex items-center justify-between  flex-3/12">
         <Button
-          className="text-sm font-[700] h-[35px]"
+          className="text-sm font-[700] h-[35px] bg-[var(--bg-primary)]"
           onClick={() => {}}
           title="Quick Create"
           hasIcon={true}

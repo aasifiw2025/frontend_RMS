@@ -266,7 +266,7 @@ const ProfileDetails = () => {
       </div>
       <div className="flex justify-center items-center mt-4">
         <Button
-          className="h-[35px] w-[120px]"
+          className="h-[35px] w-[120px] bg-[var(--bg-primary)]"
           onClick={() => {}}
           hasIcon
           icon={<FaPlus />}

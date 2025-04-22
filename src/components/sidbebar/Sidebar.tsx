@@ -32,16 +32,30 @@ const Sidebar = () => {
       />
       <Link
         to={"/"}
-        className={`h-[53px] w-full ${
+        className={`w-full h-[53px] ${
           pathname === "/" ? "bg-[#CDD7E3]" : "bg-[#F6F5F5]"
-        }  py-2 px-2.5 flex items-center gap-2.5 rounded-md mt-4`}
+        } py-2 px-2.5 flex items-center gap-2.5 rounded-md mt-4`}
       >
-        <img
-          src="/assets/home.png"
-          className="w-[18px] h-[18px] object-contain"
-          alt="dashboard"
-        />
-        <span className="text-black text-sm font-[700]">Dashboard</span>
+        {pathname === "/" ? (
+          <img
+            alt="orders"
+            className="h-6 w-6 object-contain"
+            src="/assets/home-selected.png"
+          />
+        ) : (
+          <img
+            alt="request"
+            className="h-6 w-6 object-contain"
+            src="/assets/home.png"
+          />
+        )}
+        <span
+          className={`${
+            pathname === "/" ? "text-[#0D468A]" : "text-black"
+          } text-sm font-[700]`}
+        >
+          Dashboard
+        </span>
       </Link>
       <div className="w-full bg-[#F6F5F5] py-2 px-2.5 flex flex-col items-start gap-0 rounded-md mt-4">
         {/* Parent Section  Idab Profiles */}

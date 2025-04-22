@@ -1,0 +1,15 @@
+const Header = () => {
+  return (
+    <section
+      aria-label="header"
+      className="flex items-end justify-between w-full mt-4"
+    >
+      <div>
+        <h1 className="text-black text-sm  font-[700] font-inter">Orders</h1>
+        <hr className="h-[3px] border-0 w-[179px] bg-[#EE6C4D] my-1" />
+      </div>
+    </section>
+  );
+};
+
+export default Header;

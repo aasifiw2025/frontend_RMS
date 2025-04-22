@@ -17,6 +17,9 @@ import JobList from "./pages/JobList";
 import JobCategory from "./pages/JobCategory";
 import JobRole from "./pages/JobRole";
 import CreateCandidate from "./pages/CreateCandidate";
+import OrderDetails from "./pages/OrderDetails";
+import CompanyDetails from "./pages/CompanyDetails";
+import CandidateDetails from "./pages/CandidateDetails";
 
 const App = () => {
   return (
@@ -30,11 +33,14 @@ const App = () => {
           <Route path="company" element={<Company />} />
           <Route path="candidate" element={<Candidate />} />
           <Route path="orders" element={<Orders />} />
+          <Route path="orders/:orderId" element={<OrderDetails />} />
           <Route path="request" element={<Request />} />
           <Route path="role" element={<Role />} />
           <Route path="create-company" element={<CreateCompany />} />
           <Route path="create-candidate" element={<CreateCandidate />} />
           <Route path="companypriceplan" element={<CompanyPriceplan />} />
+          <Route path="company/:companyId" element={<CompanyDetails />} />
+          <Route path="candidate/:candidateId" element={<CandidateDetails />} />
         </Route>
 
         {/* Jobs Section */}

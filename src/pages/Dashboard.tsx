@@ -25,12 +25,12 @@ const Dashboard = () => {
         </div>
         <div className="flex items-center gap-4 ">
           <Button
-            className="text-sm font-[700] h-[35px]"
+            className="text-sm font-[700] h-[35px] bg-[var(--bg-primary)]"
             onClick={() => {}}
             title="Company"
           />
           <Button
-            className="text-sm font-[700] h-[35px]"
+            className="text-sm font-[700] h-[35px] bg-[var(--bg-primary)]"
             onClick={() => {}}
             title="Candidate"
           />

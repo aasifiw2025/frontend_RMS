@@ -60,7 +60,7 @@ const Stats = () => {
             <hr className="h-[3px] border-0 w-[179px] bg-[#EE6C4D] my-1" />
           </div>
           <Button
-            className="text-sm font-[700] h-[35px]"
+            className="text-sm font-[700] h-[35px] bg-[var(--bg-primary)]"
             onClick={() => {}}
             title="View All"
           />
@@ -97,7 +97,7 @@ const Stats = () => {
             );
           })}
         </div>
-        {/* header */}
+        {/* Recent Orders header */}
         <section
           aria-label="header"
           className="flex items-end justify-between w-full mt-8"
@@ -109,7 +109,7 @@ const Stats = () => {
             <hr className="h-[3px] border-0 w-[179px] bg-[#EE6C4D] my-1" />
           </div>
           <Button
-            className="text-sm font-[700] h-[35px]"
+            className="text-sm font-[700] h-[35px] bg-[var(--bg-primary)]"
             onClick={() => {}}
             title="View All"
           />

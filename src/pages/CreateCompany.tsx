@@ -6,6 +6,7 @@ import SocialDetails from "../forms/SocialDetails";
 import FormLeft from "../forms/FormLeft";
 import FormRight from "../forms/FormRight";
 import { FormEvent, useState } from "react";
+import Button from "../components/ui/Button";
 
 const CreateCompany = () => {
   const [formData, setFormData] = useState({
@@ -49,10 +50,13 @@ const CreateCompany = () => {
       </div>
       <SocialDetails socials={socials} setSocials={setSocials} />
       <div className="flex justify-center items-center w-full">
-        <button className="object-contain rounded-[10px] p-2 bg-[var(--bg-primary)] ">
-          <FaPlus color="#fff" size={15} className="inline" />
-          <span className="inline ml-2 text-white text-sm">Quick Create</span>
-        </button>
+        <Button
+          className="text-sm font-[700] h-[35px] bg-[var(--bg-primary)]"
+          onClick={() => {}}
+          title="Quick Create"
+          hasIcon={true}
+          icon={<FaPlus />}
+        />
       </div>
       <section
         aria-label="header"
@@ -72,13 +76,13 @@ const CreateCompany = () => {
         <span>Profile Details</span>
       </div>
       <div className="flex justify-center items-center mt-4">
-        <button
-          type="submit"
-          className="object-contain rounded-[10px] p-2 bg-[var(--bg-primary)] "
-        >
-          <FaPlus color="#fff" size={15} className="inline" />
-          <span className="inline ml-2 text-white text-sm">Create</span>
-        </button>
+        <Button
+          className="text-sm font-[700] h-[35px] bg-[var(--bg-primary)]"
+          onClick={() => {}}
+          title="Submit"
+          hasIcon={true}
+          icon={<FaPlus />}
+        />
       </div>
     </form>
   );

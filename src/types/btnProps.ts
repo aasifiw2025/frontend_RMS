@@ -6,4 +6,5 @@ export interface btnProps {
   hasIcon?: boolean;
   icon?: ReactNode;
   className?: string;
+  textClassName?: string;
 }
