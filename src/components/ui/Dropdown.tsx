@@ -15,7 +15,7 @@ const DropDownMenu = ({
   const mergedClassName = clsx(baseClassName, classname);
   return (
     <div className="flex flex-1 flex-col">
-      <label htmlFor={id} className="font-inter text-sm font-[700]">
+      <label htmlFor={id} className="font-inter text-sm font-[700] mb-2">
         {label}
         {isRequired && <span className="text-red-500">*</span>}
       </label>

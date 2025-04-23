@@ -7,4 +7,5 @@ export interface btnProps {
   icon?: ReactNode;
   className?: string;
   textClassName?: string;
+  type?: string;
 }

@@ -21,7 +21,7 @@ body {
 }
 
 #sidebar::-webkit-scrollbar {
-  width: 5px;
+  display: none;
 }
 
 #sidebar::-webkit-scrollbar-track {

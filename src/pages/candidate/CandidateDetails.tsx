@@ -1,6 +1,6 @@
-import CandidateProfileLeft from "../components/candidatedetails/CandidateProfileLeft";
-import CandidateProfileRight from "../components/candidatedetails/CandidateProfileRight";
-import Header from "../components/candidatedetails/Header";
+import CandidateProfileLeft from "../../components/candidatedetails/CandidateProfileLeft";
+import CandidateProfileRight from "../../components/candidatedetails/CandidateProfileRight";
+import Header from "../../components/candidatedetails/Header";
 
 const CandidateDetails = () => {
   return (
@@ -8,7 +8,7 @@ const CandidateDetails = () => {
       {/* header */}
       <Header />
       {/* grid */}
-      <div className="mt-4 flex items-center gap-8 w-full h-screen">
+      <div className="mt-4 flex items-start gap-8 w-full min-h-screen">
         {/* left */}
         <CandidateProfileLeft />
         {/* right */}

@@ -1,6 +1,6 @@
-import Header from "../components/companyplan/Header";
-import PricingCard from "../components/companyplan/PricingCard";
-import SearchBox from "../components/companyplan/SearchBox";
+import Header from "../../components/companyplan/Header";
+import PricingCard from "../../components/companyplan/PricingCard";
+import SearchBox from "../../components/companyplan/SearchBox";
 
 const CompanyPlan = () => {
   return (

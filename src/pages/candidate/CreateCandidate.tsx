@@ -1,30 +1,21 @@
-import Header from "../components/createcompany/Header";
-
-import { FaPlus } from "react-icons/fa";
-import AccountDetails from "../forms/AccountDetails";
-import SocialDetails from "../forms/SocialDetails";
-import FormLeft from "../forms/FormLeft";
-import FormRight from "../forms/FormRight";
 import { FormEvent, useState } from "react";
-import Button from "../components/ui/Button";
+import Header from "../../components/createcandidate/Header";
+import AccountDetails from "../../forms/createcandidate/AccountDetails";
+import SocialDetails from "../../forms/SocialDetails";
+import FormLeft from "../../forms/createcandidate/FormLeft";
+import FormRight from "../../forms/createcandidate/FormRight";
+import { FaPlus } from "react-icons/fa";
+import Button from "../../components/ui/Button";
+import ProfileDetails from "../../forms/createcandidate/ProfileDetails";
 
-const CreateCompany = () => {
-  const [formData, setFormData] = useState({
-    companyName: "",
+const CreateCandidate = () => {
+  const [accountDetails, setAccountDetails] = useState({
+    name: "",
     email: "",
-    mobile: "",
-    orgType: "",
     password: "",
-    website: "",
-    serviceProvider: false,
-    secondaryEmail: "",
-    secondaryMobile: "",
-    indType: "",
-    country: "India",
-    userName: "",
-    city: "",
-    state: "",
-    pincode: "",
+    country: "",
+    mobile: "",
+    links: "",
   });
   const handleSubmitForm = (ev: FormEvent<HTMLFormElement>) => {
     ev.preventDefault();
@@ -38,23 +29,39 @@ const CreateCompany = () => {
     youtube: "",
     link: "",
   });
+
+  const [createProps, setCreateProps] = useState({
+    name: "",
+    email: "",
+    password: "",
+    mobile: "",
+    country: "",
+    city: "",
+    state: "",
+    pincode: "",
+    profile: "",
+    links: "",
+  });
   return (
-    <form onSubmit={handleSubmitForm} className="w-full pb-8">
+    <form onSubmit={handleSubmitForm} id="create-candidate" className="py-4">
       <Header />
       <div className="h-[50px] w-full bg-[#F5F4F4] rounded-lg border-[1px] border-[#CBCBCB] flex justify-start items-center pl-4 mt-6">
         <span>Account Details</span>
       </div>
-      <AccountDetails formData={formData} setFormData={setFormData} />
+      <AccountDetails
+        accountDetails={accountDetails}
+        setAccountDetails={setAccountDetails}
+      />
       <div className="h-[50px] w-full bg-[#F5F4F4] rounded-lg border-[1px] border-[#CBCBCB] flex justify-start items-center pl-4 mt-6">
         <span>Social Details</span>
       </div>
       <SocialDetails socials={socials} setSocials={setSocials} />
       <div className="flex justify-center items-center w-full">
         <Button
-          className="text-sm font-[700] h-[35px] bg-[var(--bg-primary)]"
-          onClick={() => {}}
           title="Quick Create"
-          hasIcon={true}
+          onClick={() => {}}
+          className="h-[35px]"
+          hasIcon
           icon={<FaPlus />}
         />
       </div>
@@ -67,25 +74,17 @@ const CreateCompany = () => {
           <hr className="h-[3px] border-0 w-full  bg-[#EE6C4D] my-1" />
         </div>
       </section>
-
       <section className="flex flex-row justify-between w-full gap-8">
-        <FormLeft formData={formData} setFormData={setFormData} />
+        <FormLeft formData={createProps} setFormData={setCreateProps} />
         <FormRight socials={socials} setSocials={setSocials} />
       </section>
       <div className="h-[50px] w-full bg-[#F5F4F4] rounded-lg border-[1px] border-[#CBCBCB] flex justify-start items-center pl-4 mt-6">
         <span>Profile Details</span>
       </div>
-      <div className="flex justify-center items-center mt-4">
-        <Button
-          className="text-sm font-[700] h-[35px] bg-[var(--bg-primary)]"
-          onClick={() => {}}
-          title="Submit"
-          hasIcon={true}
-          icon={<FaPlus />}
-        />
-      </div>
+
+      <ProfileDetails />
     </form>
   );
 };
 
-export default CreateCompany;
+export default CreateCandidate;

@@ -1,6 +1,6 @@
-import CompanyList from "../components/company/CompanyList";
-import Header from "../components/company/Header";
-import SearchBox from "../components/company/SearchBox";
+import CompanyList from "../../components/company/CompanyList";
+import Header from "../../components/company/Header";
+import SearchBox from "../../components/company/SearchBox";
 
 const Company = () => {
   return (

@@ -15,7 +15,7 @@ const Textarea = ({
 
   return (
     <div className="flex flex-col">
-      <label htmlFor={id} className="font-inter text-sm font-[700]">
+      <label htmlFor={id} className="font-inter text-sm font-[700] mb-2">
         {label}
         {isRequired && <span className="text-red-500">*</span>}
       </label>

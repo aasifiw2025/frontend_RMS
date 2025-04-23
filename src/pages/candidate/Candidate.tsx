@@ -1,6 +1,6 @@
-import CandidateCard from "../components/candidate/CandidateCard";
-import Header from "../components/candidate/Header";
-import SearchBox from "../components/candidate/SearchBox";
+import CandidateCard from "../../components/candidate/CandidateCard";
+import Header from "../../components/candidate/Header";
+import SearchBox from "../../components/candidate/SearchBox";
 
 const Candidate = () => {
   return (

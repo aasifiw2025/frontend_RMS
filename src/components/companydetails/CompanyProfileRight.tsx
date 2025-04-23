@@ -5,6 +5,7 @@ import SwitchComponent from "../ui/Switch";
 const CompanyProfileRight = () => {
   return (
     <div className="flex-4/12 bg-[#F5F4F4] h-full p-4">
+      {/* profile */}
       <div className="flex items-center gap-4">
         <img
           src="/assets/logo2.png"
@@ -23,16 +24,21 @@ const CompanyProfileRight = () => {
           </div>
         </div>
       </div>
+      {/* contact Address */}
       <div className="py-4">
-        <p className="text-xs font-[400]">info@karmallp.com</p>
-        <p className="text-xs font-[400]">
+        <a href="mailto:info@karmallp.com" className="text-xs font-[400]">
+          info@karmallp.com
+        </a>
+        <a href="tel:+91123456789" className="text-xs font-[400]">
           Mobile: <span className="font-[700]">+91 123456789</span>
-        </p>
+        </a>
       </div>
+      {/* organisation Type */}
       <div className="flex items-center justify-between w-full">
         <p className="text-sm font-[400]">Organization Type</p>
         <p className="text-sm font-[700]">Business Consultancy</p>
       </div>
+      {/* company Location Details */}
       <p className="text-sm font-[400] pt-4 pb-2">Company Location Details</p>
       <div className="space-y-4 pl-2">
         <div className="flex items-center justify-between w-full">
@@ -52,6 +58,7 @@ const CompanyProfileRight = () => {
           <p className="text-sm font-[700]">123456</p>
         </div>
       </div>
+      {/* company personal details */}
       <div className="w-full space-y-6 mt-4">
         <div className="flex items-center justify-between w-full">
           <p className="text-sm font-[400]">Team Size</p>
