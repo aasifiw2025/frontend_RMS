@@ -2,14 +2,14 @@ import { FaPlus } from "react-icons/fa";
 import Header from "../../components/jobcategory/Header";
 import Button from "../../components/ui/Button";
 import JobCategoryCard from "../../components/jobcategory/JobCategoryCard";
-import { useRef, useState } from "react";
+import { useState } from "react";
 import Modal from "../../components/ui/Dialog";
 import Input from "../../components/ui/Input";
 
 const JobCategory = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [categoryName, setCategoryName] = useState("");
-  const fileRef = useRef<HTMLInputElement>(null);
+  // const fileRef = useRef<HTMLInputElement>(null);
   return (
     <main className="w-full" id="category-list">
       {/* header */}
