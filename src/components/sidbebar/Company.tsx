@@ -5,11 +5,11 @@ const CompanyProfiles = () => {
   const { pathname } = useLocation();
 
   return (
-    <div className="w-full flex flex-col gap-1 pl-4">
+    <div className="w-full flex flex-col gap-4 pl-4">
       {/* Company */}
       <Link
         to={"/profiles/company"}
-        className={`w-full h-[53px] ${
+        className={`w-full h-[35px] ${
           pathname === "/profiles/company" ||
           pathname === "/profiles/create-company"
             ? "bg-[#CDD7E3]"
@@ -45,7 +45,7 @@ const CompanyProfiles = () => {
       {/* Candidate */}
       <Link
         to={"/profiles/candidate"}
-        className={`w-full h-[53px] ${
+        className={`w-full h-[35px] ${
           pathname === "/profiles/candidate" ||
           pathname === "/profiles/create-candidate"
             ? "bg-[#CDD7E3]"
@@ -76,7 +76,7 @@ const CompanyProfiles = () => {
       {/* Orders */}
       <Link
         to={"/profiles/orders"}
-        className={`w-full h-[53px] ${
+        className={`w-full h-[35px] ${
           pathname === "/profiles/orders" || pathname === "/profiles/orders/1"
             ? "bg-[#CDD7E3]"
             : "bg-[#F6F5F5]"
@@ -109,7 +109,7 @@ const CompanyProfiles = () => {
       {/* Request */}
       <Link
         to={"/profiles/request"}
-        className={`w-full h-[53px] ${
+        className={`w-full h-[35px] ${
           pathname === "/profiles/request" ? "bg-[#CDD7E3]" : "bg-[#F6F5F5]"
         } py-2 px-2.5 flex items-center gap-2.5 rounded-md`}
       >
@@ -138,7 +138,7 @@ const CompanyProfiles = () => {
       {/* User Role */}
       <Link
         to={"/profiles/role"}
-        className={`w-full h-[53px] ${
+        className={`w-full h-[35px] ${
           pathname === "/profiles/role" ? "bg-[#CDD7E3]" : "bg-[#F6F5F5]"
         } py-2 px-2.5 flex items-center gap-2.5 rounded-md`}
       >

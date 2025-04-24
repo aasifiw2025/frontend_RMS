@@ -16,7 +16,7 @@ const AccountDetails = ({
   setAccountDetails,
 }: candidateAccountDetailPropTypes) => {
   return (
-    <section className="flex flex-row justify-start gap-6 my-6  w-full px-4">
+    <section className="flex flex-col md:flex-row justify-start gap-6 my-6  w-full px-4">
       <div className="space-y-4 w-[350px]">
         <Input
           value={accountDetails.name}
@@ -103,7 +103,7 @@ const AccountDetails = ({
             onClick={() => {}}
             hasIcon
             icon={<FaPlus />}
-            className="h-[35px] mt-4"
+            className="h-[45px] mt-4 bg-[var(--bg-primary)]"
           />
         </div>
       </div>

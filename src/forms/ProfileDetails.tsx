@@ -21,7 +21,7 @@ const ProfileDetails = () => {
     pincode: "",
   });
   return (
-    <section className="flex flex-row justify-between w-full gap-8">
+    <section className="flex flex-col md:flex-row md:justify-between w-full gap-4 md:gap-8">
       <div className="mt-6 w-full flex flex-col gap-4">
         <DropDownMenu
           isRequired
@@ -36,7 +36,7 @@ const ProfileDetails = () => {
             { value: "private", label: "Private" },
             { value: "public", label: "Public" },
           ]}
-          classname="flex-1"
+          classname="h-[45px]"
         />
         <DropDownMenu
           isRequired
@@ -51,7 +51,7 @@ const ProfileDetails = () => {
             { value: "private", label: "Private" },
             { value: "public", label: "Public" },
           ]}
-          classname="flex-1"
+          classname="h-[45px]"
         />
         <Input
           value={formData.website}
@@ -59,7 +59,7 @@ const ProfileDetails = () => {
             setFormData({ ...formData, website: e.target.value })
           }
           id="company-website"
-          classname="w-full"
+          classname="w-full h-[45px]"
           placeholder="text"
           type="date"
           label="website"
@@ -86,7 +86,7 @@ const ProfileDetails = () => {
             { value: "private", label: "Private" },
             { value: "public", label: "Public" },
           ]}
-          classname="flex-1 mb-4"
+          classname="h-[45px] mb-4"
         />
         <Input
           value={formData.pincode}
@@ -94,7 +94,7 @@ const ProfileDetails = () => {
             setFormData({ ...formData, pincode: e.target.value })
           }
           id="company-esb-date"
-          classname="w-full"
+          classname="w-full h-[45px]"
           placeholder="text"
           type="date"
           label="Establishment Date"

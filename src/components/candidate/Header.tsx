@@ -10,7 +10,7 @@ const Header = () => {
   return (
     <header
       aria-label="header"
-      className="flex items-end justify-between w-full"
+      className="flex flex-col md:flex-row gap-4 md:gap-0 md:items-end md:justify-between w-full"
     >
       <div>
         <h1 className="text-black text-sm  font-[700] font-inter">

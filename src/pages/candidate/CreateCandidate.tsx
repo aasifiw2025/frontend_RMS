@@ -60,7 +60,7 @@ const CreateCandidate = () => {
         <Button
           title="Quick Create"
           onClick={() => {}}
-          className="h-[35px]"
+          className="h-[35px] bg-[var(--bg-primary)] mt-4"
           hasIcon
           icon={<FaPlus />}
         />
@@ -74,7 +74,7 @@ const CreateCandidate = () => {
           <hr className="h-[3px] border-0 w-full  bg-[#EE6C4D] my-1" />
         </div>
       </section>
-      <section className="flex flex-row justify-between w-full gap-8">
+      <section className="flex flex-col md:flex-row md:justify-between w-full gap-4 lg:gap-8">
         <FormLeft formData={createProps} setFormData={setCreateProps} />
         <FormRight socials={socials} setSocials={setSocials} />
       </section>

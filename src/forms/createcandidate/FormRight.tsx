@@ -15,10 +15,10 @@ const FormRight = ({ socials, setSocials }: formLinkProps) => {
 
   return (
     <div className="w-full">
-      <div className="h-[50px] w-full bg-[#F5F4F4] rounded-lg border-[1px] border-[#CBCBCB] flex justify-start items-center pl-4 mt-6">
+      <div className="h-[50px] w-full bg-[#F5F4F4] rounded-lg border-[1px] border-[#CBCBCB] flex justify-start items-center md:pl-4 mt-6">
         <span>Images</span>
       </div>
-      <div className="flex flex-row items-start gap-2 mt-6 w-full">
+      <div className="flex flex-col md:flex-row md:items-start gap-2 mt-6 w-full">
         <div className={`font-inter text-sm font-[700] w-full`}>
           Profile Picture
         </div>
@@ -39,7 +39,7 @@ const FormRight = ({ socials, setSocials }: formLinkProps) => {
           </button>
         </div>
       </div>
-      <div className="h-[220px]">
+      <div className="md:h-[220px]">
         <div className="h-[50px] w-full bg-[#F5F4F4] rounded-lg border-[1px] border-[#CBCBCB] flex justify-start items-center pl-4 mt-6">
           <span>Social Details</span>
         </div>
@@ -76,7 +76,7 @@ const FormRight = ({ socials, setSocials }: formLinkProps) => {
           <span>Files</span>
         </div>
 
-        <div className="mt-6 flex items-center justify-between w-full">
+        <div className="mt-6 flex flex-row  items-center justify-center md:justify-between w-full">
           <input ref={fileRef} type="file" className="hidden" />
           <div className="flex-1 mr-4">
             <Input
@@ -92,7 +92,7 @@ const FormRight = ({ socials, setSocials }: formLinkProps) => {
           </div>
           <button
             onClick={() => fileRef?.current?.click()}
-            className="h-[45px] w-[96px] border-3 border-[#BBBBBB] rounded-[10px]"
+            className="h-[45px] w-[96px] border-3 border-[#BBBBBB] rounded-[10px] mt-2"
           >
             Upload
           </button>

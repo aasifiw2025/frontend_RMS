@@ -5,7 +5,7 @@ import { formLinkProps } from "../types/formlink";
 
 const SocialDetails = ({ socials, setSocials }: formLinkProps) => {
   return (
-    <section className="flex flex-row justify-start gap-6 my-6  w-full px-4">
+    <section className="flex flex-col md:flex-row md:justify-start gap-3 md:gap-6 md:my-6  w-full px-2 md:px-4 mt-4">
       <DropDownMenu
         value={socials.instagram}
         onChange={(e) => setSocials({ ...socials, instagram: e.target.value })}
@@ -26,7 +26,7 @@ const SocialDetails = ({ socials, setSocials }: formLinkProps) => {
         placeholder="paste Link here"
         type="email"
       />
-      <button className="object-contain rounded-[10px] p-4 bg-[var(--bg-primary)] flex justify-center items-center">
+      <button className="object-contain rounded-[10px] mt-4 p-4 bg-[var(--bg-primary)] flex justify-center items-center">
         <FaPlus color="#fff" size={15} />
       </button>
     </section>

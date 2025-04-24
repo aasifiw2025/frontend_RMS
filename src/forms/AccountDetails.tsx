@@ -5,8 +5,8 @@ import { FormProps } from "../types/form";
 
 const AccountDetails = ({ formData, setFormData }: FormProps) => {
   return (
-    <section className="flex flex-row justify-start gap-6 my-6  w-full px-4">
-      <div className="space-y-4 w-[350px]">
+    <section className="flex flex-col md:flex-row md:justify-start gap-3 lg:gap-6 lg:my-6  w-full px-2 lg:px-4">
+      <div className="space-y-4 w-full md:w-[350px] mt-4 md:mt-0">
         <Input
           value={formData.companyName}
           onChange={(e) =>

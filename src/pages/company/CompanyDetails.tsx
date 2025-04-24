@@ -8,7 +8,7 @@ const CompanyDetails = () => {
       {/* header */}
       <Header />
       {/* company profile grid */}
-      <div className="mt-4 flex items-center gap-8 w-full h-screen">
+      <div className="mt-4 flex flex-col md:flex-row md:items-center gap-8 w-full lg:h-screen">
         {/* right */}
         <CompanyProfileRight />
         {/* left */}

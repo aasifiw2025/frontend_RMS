@@ -12,10 +12,13 @@ const SearchBox = () => {
   });
   return (
     <section
-      className="h-[105px] bg-[#F6F5F5] w-full mt-4 flex flex-row items-center justify-between px-4 rounded-[5px]"
+      className="md:h-[105px] bg-[#F6F5F5] w-full mt-4 flex flex-col md:flex-row md:items-center md:justify-between px-4 rounded-[5px]"
       aria-label="search-box"
     >
-      <form action="" className="flex items-center gap-4 w-full">
+      <form
+        action=""
+        className="flex flex-col md:flex-row md:items-center gap-4 w-full py-4 md:py-0"
+      >
         <Input
           value={formData.search}
           onChange={(e) => setFormData({ ...formData, search: e.target.value })}

@@ -12,11 +12,11 @@ const Jobs = () => {
     setIsPricePlanOpen(!isPricePlanOpen);
   };
   return (
-    <div className="w-full flex flex-col gap-1 pl-4">
+    <div className="w-full flex flex-col gap-4 pl-4">
       {/* Jobs List */}
       <Link
         to={"/jobs/list"}
-        className="w-full h-[53px] bg-[#F6F5F5] py-2 px-2.5 flex items-center gap-2.5 rounded-md"
+        className="w-full h-[35px] bg-[#F6F5F5] py-2 px-2.5 flex items-center gap-2.5 rounded-md"
       >
         <img
           alt="user"
@@ -29,7 +29,7 @@ const Jobs = () => {
       {/* Jobs Category */}
       <Link
         to={"/jobs/category"}
-        className="w-full h-[53px] bg-[#F6F5F5] py-2 px-2.5 flex items-center gap-2.5 rounded-md"
+        className="w-full h-[35px] bg-[#F6F5F5] py-2 px-2.5 flex items-center gap-2.5 rounded-md"
       >
         <img
           alt="user"
@@ -42,7 +42,7 @@ const Jobs = () => {
       {/* Job Role */}
       <Link
         to={"/jobs/role"}
-        className="w-full h-[53px] bg-[#F6F5F5] py-2 px-2.5 flex items-center gap-2.5 rounded-md"
+        className="w-full h-[35px] bg-[#F6F5F5] py-2 px-2.5 flex items-center gap-2.5 rounded-md"
       >
         <img
           alt="user"
@@ -55,7 +55,7 @@ const Jobs = () => {
       {/* Price Plan (Expandable) */}
       <div className="w-full flex flex-col gap-1">
         <div
-          className="w-full h-[53px] bg-[#F6F5F5] py-2 px-2.5 flex items-center justify-between gap-2.5 rounded-md cursor-pointer hover:bg-gray-200 transition-colors"
+          className="w-full h-[35px] bg-[#F6F5F5] py-2 px-2.5 flex items-center justify-between gap-2.5 rounded-md cursor-pointer hover:bg-gray-200 transition-colors"
           onClick={togglePricePlanCollapse}
         >
           <div className="flex items-center gap-2.5">
@@ -74,7 +74,7 @@ const Jobs = () => {
           <div className="w-full flex flex-col gap-1 pl-8">
             <Link
               to={"/jobs/priceplan/company"}
-              className={`w-full h-[53px] ${
+              className={`w-full h-[35px] ${
                 path === "jobs" ? "bg-[#CDD7E3]" : "bg-[#F6F5F5]"
               } py-2 px-2.5 flex items-center gap-2.5 rounded-md`}
             >
@@ -94,7 +94,7 @@ const Jobs = () => {
             {/* Candidate */}
             <Link
               to={"/jobs/priceplan/candidate"}
-              className="w-full h-[53px] bg-[#F6F5F5] py-2 px-2.5 flex items-center gap-2.5 rounded-md"
+              className="w-full h-[35px] bg-[#F6F5F5] py-2 px-2.5 flex items-center gap-2.5 rounded-md"
             >
               <IoPersonCircle size={25} color="#433E3F" />
               <span className="text-black text-sm font-[700]">Candidate</span>

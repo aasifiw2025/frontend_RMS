@@ -24,7 +24,7 @@ const FormRight = ({ socials, setSocials }: formLinkProps) => {
       <div className="h-[50px] w-full bg-[#F5F4F4] rounded-lg border-[1px] border-[#CBCBCB] flex justify-start items-center pl-4 mt-6">
         <span>Images</span>
       </div>
-      <div className="flex flex-row items-center gap-8 mt-6">
+      <div className="flex flex-col md:flex-row items-center gap-8 mt-6">
         <div className="w-full ">
           <span className={`font-inter text-sm font-[700]`}>Logo</span>
           <input ref={logoRef} type="file" className="hidden" />
@@ -60,7 +60,7 @@ const FormRight = ({ socials, setSocials }: formLinkProps) => {
           </button>
         </div>
       </div>
-      <div className="h-[220px]">
+      <div className="md:h-[220px]">
         <div className="h-[50px] w-full bg-[#F5F4F4] rounded-lg border-[1px] border-[#CBCBCB] flex justify-start items-center pl-4 mt-6">
           <span>Social Details</span>
         </div>

@@ -7,6 +7,7 @@ import FormLeft from "../../forms/FormLeft";
 import FormRight from "../../forms/FormRight";
 import { FormEvent, useState } from "react";
 import Button from "../../components/ui/Button";
+import ProfileDetails from "../../forms/ProfileDetails";
 
 const CreateCompany = () => {
   const [formData, setFormData] = useState({
@@ -49,7 +50,7 @@ const CreateCompany = () => {
         <span>Social Details</span>
       </div>
       <SocialDetails socials={socials} setSocials={setSocials} />
-      <div className="flex justify-center items-center w-full">
+      <div className="flex justify-center items-center w-full mt-4">
         <Button
           className="text-sm font-[700] h-[35px] bg-[var(--bg-primary)]"
           onClick={() => {}}
@@ -68,13 +69,14 @@ const CreateCompany = () => {
         </div>
       </section>
 
-      <section className="flex flex-row justify-between w-full gap-8">
+      <section className="flex flex-col md:flex-row md:justify-between w-full gap-6 md:gap-8">
         <FormLeft formData={formData} setFormData={setFormData} />
         <FormRight socials={socials} setSocials={setSocials} />
       </section>
       <div className="h-[50px] w-full bg-[#F5F4F4] rounded-lg border-[1px] border-[#CBCBCB] flex justify-start items-center pl-4 mt-6">
         <span>Profile Details</span>
       </div>
+      <ProfileDetails />
       <div className="flex justify-center items-center mt-4">
         <Button
           className="text-sm font-[700] h-[35px] bg-[var(--bg-primary)]"

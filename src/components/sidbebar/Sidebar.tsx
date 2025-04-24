@@ -26,13 +26,13 @@ const Sidebar = () => {
       className="flex flex-col items-center w-[253px] h-screen overflow-y-auto"
     >
       <img
-        className="w-full h-[73px] object-contain border-[3px] border-[#0D468A] rounded-[5px]"
+        className="w-full h-[57px] object-contain border-[3px] border-[#0D468A] rounded-[5px]"
         src="/assets/idab.png"
         alt="logo"
       />
       <Link
         to={"/"}
-        className={`w-full h-[53px] ${
+        className={`w-full h-[50px] ${
           pathname === "/" ? "bg-[#CDD7E3]" : "bg-[#F6F5F5]"
         } py-2 px-2.5 flex items-center gap-2.5 rounded-md mt-4`}
       >

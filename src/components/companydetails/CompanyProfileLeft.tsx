@@ -2,7 +2,7 @@ import { IoIosCall, IoIosGlobe } from "react-icons/io";
 
 const CompanyProfileLeft = () => {
   return (
-    <div className="flex-8/12 space-y-4 h-full">
+    <div className="md:flex-8/12 flex-1 space-y-4 h-full">
       <div className="relative w-full">
         <img
           className="w-full h-[180px]"

@@ -12,10 +12,13 @@ const SearchBox = () => {
   });
   return (
     <section
-      className="h-[105px] bg-[#F6F5F5] w-full mt-6 flex flex-row items-center justify-between px-4 rounded-[5px]"
+      className="md:h-[105px] py-4 md:py-0 bg-[#F6F5F5] w-full mt-6 flex flex-row items-center justify-between px-4 rounded-[5px]"
       aria-label="search-box"
     >
-      <form action="" className="flex items-center gap-4 w-full">
+      <form
+        action=""
+        className="flex flex-col md:flex-row md:items-center gap-4 w-full"
+      >
         <div className="w-full">
           <Input
             value={formData.search}
@@ -30,7 +33,7 @@ const SearchBox = () => {
           />
         </div>
 
-        <div className="w-full flex items-center gap-8">
+        <div className="w-full flex flex-col md:flex-row md:items-center gap-4 md:gap-8">
           <DropDownMenu
             value={formData.emailVerification}
             onChange={(e) =>
